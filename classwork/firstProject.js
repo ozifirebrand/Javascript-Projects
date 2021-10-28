@@ -1,3 +1,15 @@
+// name = window.prompt("Enter your name here please")
+
+function separateName(name){
+    let newName = ""
+    for ( let key in name ){
+        newName += (name[key] + ++key)
+    }
+    console.log(newName)
+}
+
+separateName("Saheed")
+
 let native = {
     name: "",
     age: "",
@@ -8,7 +20,7 @@ let native = {
 
 console.log(native)
 
-let otherNative = new Object()
+let otherNative = {}
 
 function createObject(name, age, gender, height, hobby){
     this.name = name
