@@ -16,11 +16,8 @@ for (let counter = 1; counter<=100; counter++){
     }else console.log(counter)
 }
 
-
-let firstString = " # # # #"
-let secondString= "# # # # "
 let value = 8
 for (let counter = 0; counter<value ; counter++){
-    if (counter%2 ===0)console.log(firstString)
-    else if (counter%2 ===1)console.log(secondString)
+    if (counter%2 ===0)console.log("#     ".repeat(value/2))
+    else if (counter%2 ===1)console.log("   #  ".repeat(value/2))
 }
