@@ -16,7 +16,7 @@ for (let counter = 1; counter<=100; counter++){
     }else console.log(counter)
 }
 
-let value = 8
+let value = 8 //value should be an even number to create an event display for the chessboard
 for (let counter = 0; counter<value ; counter++){
     if (counter%2 ===0)console.log("#     ".repeat(value/2))
     else if (counter%2 ===1)console.log("   #  ".repeat(value/2))
