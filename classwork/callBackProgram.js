@@ -1,7 +1,7 @@
-function a(number, multiplier){
+function a(number, bodmas  ){
     let x = number
     for (let y = 1;y<= 12; y++){
-        multiplier(x,y)
+        bodmas(x,y)
     }
 }
 
