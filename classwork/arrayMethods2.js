@@ -28,10 +28,19 @@ let question2 = "Using array method map, print out a new key full name " +
 let question3 = "Using array method filter, return an array containing  an object with a" +
     "gender male"
 let question4 = "Do question 3 above for object with gender female"
+let question5 = "Create a new key age per object, the value of age per object is" +
+    "equivalent to the total sum of both the firstname and last name"
+let assignment = "Read on event listeners in DOM Manipulation "
+
+// todo 1.
 
 function printFirstName(anObject){
     console.log(anObject.firstName)
 }
+objArray.forEach(printFirstName)
+
+
+// todo 2.
 
 function getFullNames(anObject){
     let arrayOfFullNames = [];
@@ -41,11 +50,12 @@ function getFullNames(anObject){
     return arrayOfFullNames
 }
 
-objArray.forEach(printFirstName)
-
 let map = new Map();
 map.set("fullName", getFullNames(objArray))
 console.log(map.get("fullName"))
+
+
+// todo 3 and 4.
 
 let getMaleGender = (anObject)=>{
     if (anObject.gender === "male")
@@ -56,17 +66,24 @@ let getFemaleGender = (anObject)=>{
     if (anObject.gender ==="female") return anObject
 }
 
-for (let i = 0; i < objArray.length; i++) {
-    let eachObject = objArray[i]
-    let eachMaleGender = getMaleGender(eachObject)
+for (let i = 0; i < 1; i++) {
     console.log(objArray.filter(getMaleGender))
-    break
 }
-for (let i = 0; i < objArray.length; i++) {
-    let eachObject = objArray[i]
-    let eachMaleGender = getFemaleGender(eachObject)
+for (let i = 0; i < 1; i++) {
     console.log(objArray.filter(getFemaleGender))
-    break
 }
 
+// todo 5.
 
+let you = "We need a new key" +
+    "This key is age" +
+    "It is calculated by adding the length of first and last name" +
+    "We will print the object out with the keys and values"
+
+let calculateLengthOfNames= (anObject)=> anObject.firstName.length + anObject.lastName.length;
+for (let i = 0; i < objArray.length; i++) {
+    let ageFunction = age=> objArray.forEach(calculateLengthOfNames(objArray[i]))
+    map.set("age", ageFunction  )
+
+}
+console.log(map.get("age"))
