@@ -30,7 +30,7 @@ let question3 = "Using array method filter, return an array containing  an objec
 let question4 = "Do question 3 above for object with gender female"
 let question5 = "Create a new key age per object, the value of age per object is" +
     "equivalent to the total sum of both the firstname and last name"
-let assignment = "Read on event listeners in DOM Manipulation "
+let assignment = "Read on event listeners in DOM Manipulation"
 
 // todo 1.
 
