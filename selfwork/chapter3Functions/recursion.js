@@ -24,3 +24,19 @@ function getEvennessOfNumber(aValue){
 }
 
 console.log(getEvennessOfNumber(75))
+
+/* todo ==> can't believe this code stressed me this much.
+todo        I love learning. Though tearful and straining
+ */
+
+function countBs(aWord){
+    let counter = 0
+    for ( let aCharacter of aWord){
+        if (aCharacter === "B"){
+            counter += 1
+        }
+    }
+    return counter
+}
+
+console.log(countBs("Buhari Omo babaNgida"))
