@@ -29,30 +29,18 @@ console.log(getEvennessOfNumber(75))
 todo        I love learning. Though tearful and straining
  */
 
-function countBs(aWord, aFunction){
-
+function countBs(aWord, aCharacter, aFunction) {
+    return (aFunction(aWord, aCharacter))
 }
-//
-// function countBs(aFunction){
-//     let counter = 0
-//     for ( let aCharacter of aWord){
-//         if (aCharacter === "B"){
-//             counter += 1
-//         }
-//     }
-//     return counter
-// }
-//
-// let countChar = (aWord, aChar)=> {
-//     let counter =0
-//     for (let aCharacter of aWord){
-//         if (aCharacter=== aChar){
-//             counter +=1
-//         }
-//     }
-//     return counter
-// }
 
+let countChar = (aWord, aChar)=> {
+    let counter =0
+    for (let aCharacter of aWord){
+        if (aCharacter=== aChar){
+            counter +=1
+        }
+    }
+    return counter
+}
 
-console.log(countBs("Buhari Omo baBaNgida"))
-console.log(countChar("Umuahia ndi oma", 'u'))
+console.log(countBs("Seyi Shemba", 'm', countChar))

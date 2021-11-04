@@ -16,6 +16,5 @@ let documentPseudo = {
     }
 }
 
-let myFunction = (event, number) => console.log(event, number)
+documentPseudo.addEventListenerPseudo("hover", (event, number) => console.log(event, number))
 
-documentPseudo.addEventListenerPseudo("hover", myFunction)
