@@ -6,8 +6,21 @@ function power(base, exponent){
         return base * power(base, keepOnReducingTheExponent(exponent))    }
 }
 
-function keepOnReducingTheExponent(exponent){
-    return exponent-1;
-}
+let keepOnReducingTheExponent= (exponent)=> exponent-1;
 
 console.log(power(2, 5))
+
+function getEvennessOfNumber(aValue){
+    if (aValue ===1){
+        return "odd"
+    }
+    else if (aValue===0){
+        return "even"
+    }
+    else if (aValue < 0){
+        return getEvennessOfNumber(aValue+2)
+    }
+    else return getEvennessOfNumber(aValue-2)
+}
+
+console.log(getEvennessOfNumber(75))
