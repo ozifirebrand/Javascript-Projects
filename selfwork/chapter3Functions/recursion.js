@@ -39,4 +39,14 @@ function countBs(aWord){
     return counter
 }
 
-console.log(countBs("Buhari Omo babaNgida"))
+let countChars = (aWord, aChar)=> {
+    let counter =0
+    for (let aCharacter of aWord){
+        if (aCharacter=== aChar){
+            counter +=1
+        }
+    }
+    return counter
+}
+console.log(countBs("Buhari Omo baBaNgida"))
+console.log(countChars("Umuahia ndi oma", 'u'))
