@@ -25,16 +25,17 @@ let greeting = "Hello"
  newArray.push(8, 3, 22)
  console.log(newArray)
 
- function reverse(word){
-     let reversedString ='';
-     let arr = [];
-     for (let i = 0; i < word.length ; i++) {
-         arr.push(word[i])
-     }
-     while (arr.length>0){
-         reversedString += arr.pop()
-     }
-     return reversedString
- }
+ let reverseFunction = (word)=>{
+     let wordArray =[];
+     let reversedString = "";
 
- console.log(reverse("seyiObembe"))
+     for (let character of word){
+         wordArray.push(character);
+     }
+
+     while (wordArray.length>0){
+         reversedString += wordArray.pop();
+     }
+     return reversedString;
+ }
+ console.log(reverseFunction("seyiObembe"))
