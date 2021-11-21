@@ -1,8 +1,12 @@
-function range(start, end){
+function range(start, end, step){
     let array = []
     while (start<=end){
         array.push(start)
-        start++
+        if (step === undefined || step ===null){
+            start++
+        }else {
+            start +=step
+        }
     }
     return array
 }
@@ -16,5 +20,6 @@ function sumOfRange(array){
 }
 
 console.log(range(1, 10))
-let array = range(1, 10)
+console.log(range(1, 10, 2))
+let array = range(1, 10, )
 console.log(sumOfRange(array))
