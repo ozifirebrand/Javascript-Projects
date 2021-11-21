@@ -39,3 +39,12 @@ let greeting = "Hello"
      return reversedString;
  }
  console.log(reverseFunction("seyiObembe"))
+
+ Queue.prototype.enqueue = function (e){
+     this.elements.push(e);
+ };
+
+ function Queue(){
+     this.elements = []
+     this.elements.push(8)
+ }
